@@ -1,0 +1,216 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+ul li a:hover{
+    /* color: rgb(0, 68, 255); */
+    background-color: rgba(211, 211, 211, 0.289);
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 6%);
+    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+.img{
+    width: 100px;
+    height: 100px;
+}
+.img:hover{
+    opacity: 0.7;
+}
+.pozadina{
+    background-image: url('pozadinapazar.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+.tekst1{
+    background-color: rgba(0, 17, 126, 0.564);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+.sponsors{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.doha{
+    height: 120px;
+    width: 120px;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.barb{
+    width: 300px;
+    height: 60px;
+}
+.numa{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.eh{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 17, 126, 0.927);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footerContent h3{
+    font-size: 32px;
+}
+.footerContent span{
+    display: block;
+    font-size: 20px;
+}
+.footerContent p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: skyblue;
+}
+.footer-bottom{
+    background: rgba(0, 17, 126, 0.97);
+    width: 100%;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 16px;
+    word-spacing: 2px;
+}
+.footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+}
+.footer-menu{
+    float: right;
+}
+.footer-menu ul{
+    display: flex;
+}
+.footer-menu ul li{
+    padding-right: 10px;
+    display: block;
+}
+.footer-menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer-menu ul li a:hover{
+    color: #69e6ff;
+}
+hr{
+    width: 80%;
+}
+@media (max-width: 826px){
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 450px){
+    .barb{
+        width: 80px;
+        height: 40px;
+    }
+    .eh{
+        width: 50px;
+        height: 50px;
+    }
+    .doha{
+        width: 50px;
+        height: 50px;
+    }
+    .numa{
+        height: 110px;
+    }
+}
